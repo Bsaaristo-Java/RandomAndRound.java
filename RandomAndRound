@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Brian Saaristo
+ */
+public class Brian_PL_A04_17382481 {
+
+    public Brian_PL_A04_17382481() {
+
+        testRandom();
+    }
+
+    private static void testRandom() {
+
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+//
+        double randomNumber = 0.0;
+        randomNumber = Math.random();
+        long randomRound = 0;
+        randomRound = (long) randomNumber;
+        int minValue = 1;
+        int maxValue = 20;
+        int castRange = (maxValue - minValue) + 1;
+        double roundRange = (Math.random() * castRange) + minValue;
+//
+        Scanner input = new Scanner(System.in);
+//
+        testRandom();
+//
+        System.out.println("Randomly generated number: " + randomNumber);
+        System.out.println("Using Math.round on my random number: " + Math.round(randomNumber));
+        System.out.println("Getting a random number within a range: " + roundRange);
+        System.out.println("Cast range to int: " + (int) roundRange);
+        System.out.println("Using Math.round on my range: " + Math.round(roundRange));
+//
+    }
